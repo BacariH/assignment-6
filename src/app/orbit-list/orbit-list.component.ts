@@ -13,7 +13,7 @@ export class OrbitListComponent implements OnInit {
   ngOnInit() {
      let a = new Satellite("SiriusXM", "Space Debris", "2009-03-21", "LOW", true);
 
-    console.log("Satellite:", a.shouldShowWarning())
+    console.log("Satellite:", a.shouldShowWarning());
   }
   sort(column: string): void {
     // array.sort modifies the array, sorting the items based on the given compare function
@@ -26,6 +26,4 @@ export class OrbitListComponent implements OnInit {
        return 0;
     });
  }
-
- 
 }

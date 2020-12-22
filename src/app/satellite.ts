@@ -17,5 +17,5 @@ export class Satellite {
         let keyword: string = 'Space Debris';
         return {'warning': this.type == keyword}
     }
-    
+
 }
