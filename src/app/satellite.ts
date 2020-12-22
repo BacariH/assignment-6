@@ -12,13 +12,10 @@ export class Satellite {
         this.operational = operational;
     }
 
+    
     shouldShowWarning(){
         let keyword: string = 'Space Debris';
-        if(this.type === keyword){
-            return true;
-        } else {
-            return false;
-        }
+        return {'warning': this.type == keyword}
     }
     
 }

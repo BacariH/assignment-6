@@ -11,9 +11,10 @@ export class OrbitListComponent implements OnInit {
   // constructor() { }
   @Input() satellite: Satellite[];
   ngOnInit() {
-    console.log("Satellite:", this.satellite)
-  }
+     let a = new Satellite("SiriusXM", "Space Debris", "2009-03-21", "LOW", true);
 
+    console.log("Satellite:", a.shouldShowWarning())
+  }
   sort(column: string): void {
     // array.sort modifies the array, sorting the items based on the given compare function
     this.satellite.sort(function(a: Satellite, b: Satellite): number {
@@ -26,7 +27,5 @@ export class OrbitListComponent implements OnInit {
     });
  }
 
- onEnter(searchTerm: string): void {
-   console.log(searchTerm);
- }
+ 
 }

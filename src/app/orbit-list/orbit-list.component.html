@@ -10,7 +10,7 @@
    </tr>
    <tr *ngFor="let sate of satellite">
       <td>{{sate.name}}</td>
-      <td >{{sate.type}}</td>
+      <td [ngClass]="">{{sate.type}}</td>
       <td>{{sate.operational}}</td>
       <td>{{sate.orbitType}}</td>
       <td>{{sate.launchDate}}</td>
