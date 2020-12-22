@@ -1,2 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-orbit-list [satellite]="sourceList"></app-orbit-list>
+<head>
+    <style>
+       body {
+         font-family: 'Helvetica', 'Courier';
+       }
+   
+       h3 {
+           color: #34495E;
+       }
+     </style>>
+   </head>
+<app-orbit-list [satellite]="displayList"></app-orbit-list>
+<div class="search-form">
+    <label for="searchTerm">Search:</label>
+    <input #searchTerm type="text" (keyup.enter)="search(searchTerm.value)" placeholder="Enter in a satellite to search.">
+    <button (click)="search(searchTerm.value)">Search</button>
+ </div>

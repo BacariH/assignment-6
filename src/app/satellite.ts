@@ -13,11 +13,12 @@ export class Satellite {
     }
 
     shouldShowWarning(){
-        if(this.type){
+        let keyword: string = 'Space Debris';
+        if(this.type === keyword){
             return true;
         } else {
             return false;
         }
-    } 
+    }
     
 }
