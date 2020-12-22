@@ -1,0 +1,28 @@
+<head>
+ <style>
+    body {
+      font-family: 'Helvetica', 'Courier';
+    }
+
+    h3 {
+        color: #34495E;
+    }
+  </style>>
+</head>
+<h3>Orbit Report</h3>
+<table>
+   <tr class="header-row">
+      <th class="sortable">Name</th>
+      <th class="sortable">Type</th>
+      <th>Operational</th>
+      <th>Orbit Type</th>
+      <th>Launch Date</th>
+   </tr>
+   <tr *ngFor="let sate of satellite">{{sate.name}}</tr>
+   <tr *ngFor="let sate of satellite">{{sate.type}}</tr>
+   <tr *ngFor="let sate of satellite">{{sate.operational}}</tr>
+   <tr *ngFor="let sate of satellite">{{sate.orbitType}}</tr>
+   <tr *ngFor="let sate of satellite">{{sate.launchDate}}</tr>
+</table>
+
+    
